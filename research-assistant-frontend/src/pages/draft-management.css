@@ -1,0 +1,122 @@
+.draft-topic {
+  color: #7772ed !important;
+  font-weight: 600;
+}
+
+.draft-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 17px;
+  border-top: 1px solid #eff0f5;
+  padding-top: 13px;
+}
+
+.draft-actions button {
+  flex: 1;
+  border: 1px solid #e8e8f0;
+  background: white;
+  padding: 9px;
+  border-radius: 7px;
+  font-size: 10px;
+  color: #7772ed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.draft-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1100;
+  background: #15182b99;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+.draft-modal {
+  width: 100%;
+  max-width: 750px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: white;
+  border-radius: 13px;
+}
+
+.draft-modal-header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.draft-modal-header h3 {
+  font-size: 15px;
+  margin: 0;
+}
+
+.draft-modal-header button {
+  border: none;
+  background: #f1f1f7;
+  padding: 9px;
+  border-radius: 7px;
+}
+
+.draft-modal-body {
+  padding: 25px;
+}
+
+.draft-modal-body label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  margin: 17px 0 8px;
+}
+
+.draft-modal-body input,
+.draft-modal-body textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e5e6ee;
+  border-radius: 7px;
+  outline: none;
+  font-size: 12px;
+  font-family: inherit;
+}
+
+.draft-modal-body textarea {
+  min-height: 350px;
+  resize: vertical;
+  line-height: 1.8;
+}
+
+.draft-modal-body input:disabled,
+.draft-modal-body textarea:disabled {
+  background: #f8f8fc;
+  color: #555b70;
+  opacity: 1;
+}
+
+.draft-modal-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.draft-modal-actions button {
+  border: 1px solid #e8e8f0;
+  background: white;
+  color: #7772ed;
+  padding: 10px 14px;
+  border-radius: 7px;
+  font-size: 10px;
+}
+
+@media(max-width: 600px) {
+  .draft-modal-body {
+    padding: 15px;
+  }
+}

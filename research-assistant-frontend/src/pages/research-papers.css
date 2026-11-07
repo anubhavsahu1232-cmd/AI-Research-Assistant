@@ -1,0 +1,235 @@
+﻿.management-page {
+  padding: 38px;
+  color: #172033;
+}
+.management-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 32px;
+}
+.management-heading span {
+  color: #7568ef;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+.management-heading h1 {
+  font-size: 30px;
+  font-weight: 750;
+  margin: 8px 0;
+}
+.management-heading p {
+  color: #8390a8;
+}
+.management-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.management-primary,
+.management-secondary {
+  border: 0;
+  border-radius: 9px;
+  padding: 12px 17px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+}
+.management-primary {
+  color: white;
+  background: #7568ef;
+}
+.management-secondary {
+  color: #53617a;
+  background: white;
+  border: 1px solid #e1e5ef;
+}
+.management-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 22px;
+  color: #8390a8;
+  font-size: 13px;
+}
+.management-search {
+  width: min(100%, 380px);
+  border: 1px solid #e1e5ef;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 14px;
+  color: #8994a9;
+}
+.management-search input {
+  width: 100%;
+  border: 0;
+  outline: none;
+  padding: 13px 0;
+}
+.management-empty {
+  min-height: 280px;
+  border: 1px solid #e5e9f1;
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+  color: #8490a6;
+  padding: 30px;
+}
+.management-empty svg {
+  font-size: 30px;
+  color: #7568ef;
+}
+.management-empty h3 {
+  color: #172033;
+  margin: 0;
+}
+.management-empty p {
+  margin: 0 0 10px;
+}
+.management-success,
+.management-error {
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin-bottom: 18px;
+}
+.management-success {
+  color: #18794e;
+  background: #e9f8f0;
+}
+.management-error {
+  color: #b42318;
+  background: #fff0ef;
+}
+.paper-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+.paper-card {
+  border: 1px solid #e5e9f1;
+  border-radius: 13px;
+  padding: 22px;
+  background: white;
+}
+.paper-card-icon {
+  color: #7568ef;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.paper-card h3 {
+  font-size: 17px;
+  font-weight: 700;
+  min-height: 45px;
+}
+.paper-card p,
+.paper-meta {
+  color: #8390a8;
+  font-size: 13px;
+}
+.paper-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 0;
+  border-top: 1px solid #edf0f5;
+}
+.paper-card-actions {
+  display: flex;
+  gap: 9px;
+}
+.paper-card-actions button {
+  border: 1px solid #e5e9f1;
+  background: white;
+  border-radius: 7px;
+  padding: 9px 12px;
+  color: #6358d8;
+  cursor: pointer;
+}
+.paper-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 20, 40, .55);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.paper-modal {
+  background: white;
+  width: min(100%, 650px);
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 15px;
+  padding: 26px;
+}
+.paper-modal-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+.paper-modal-heading h2 {
+  font-size: 21px;
+  margin: 0;
+}
+.paper-modal-heading button {
+  border: 0;
+  background: transparent;
+  font-size: 20px;
+}
+.paper-modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.paper-modal form label {
+  font-weight: 600;
+  font-size: 13px;
+  margin-top: 8px;
+}
+.paper-modal form input,
+.paper-modal form textarea {
+  width: 100%;
+  border: 1px solid #dfe4ed;
+  border-radius: 8px;
+  padding: 11px;
+  outline-color: #7568ef;
+}
+.paper-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+.paper-form-actions button {
+  border: 1px solid #e1e5ef;
+  background: white;
+  border-radius: 8px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+@media(max-width: 700px) {
+  .management-page { padding: 20px 14px; }
+  .management-heading { align-items: flex-start; flex-direction: column; }
+  .management-toolbar { align-items: flex-start; flex-direction: column; }
+  .management-search { width: 100%; }
+}
+
+.paper-form-actions button.management-primary {
+  background: #7568ef;
+  color: #ffffff;
+  border-color: #7568ef;
+}
+
