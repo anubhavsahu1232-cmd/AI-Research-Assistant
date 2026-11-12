@@ -2,6 +2,13 @@
 
 An AI-powered academic research workspace designed to help students and researchers organize research work and create editable, structured academic drafts from a topic.
 
+<div align="center">
+
+[![Live Demo](https://img.shields.io/badge/🚀%20LIVE%20DEMO-Open%20Application-16a34a?style=for-the-badge&logo=vercel)](https://research-assistant-frontend-kappa.vercel.app/)
+[![Source Code](https://img.shields.io/badge/📂%20SOURCE%20CODE-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/anubhavsahu1232-cmd/AI-Research-Assistant)
+
+</div>
+
 > **Project status:** Academic minor-project implementation. Features and integrations may evolve as development continues.
 
 ## ✨ Overview
@@ -23,6 +30,12 @@ AI Research Assistant brings research-paper organization and AI-assisted academi
 - **Draft management** — save generated work and continue editing it later.
 - **Research workspace** — keep research-related work organized in one application.
 - **REST API backend** — frontend communicates with backend services through API endpoints.
+
+## 🌐 Live Application
+
+Try the deployed frontend here:
+
+**[AI Research Assistant – Live Demo](https://research-assistant-frontend-kappa.vercel.app/)**
 
 ## 🧰 Technology Stack
 
